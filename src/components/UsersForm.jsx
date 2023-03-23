@@ -132,12 +132,15 @@ const UsersForm = ({ handlePost, editingMode, userEditing, formToggle }) => {
                 },
                 pattern: {
                   value: /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$/,
-                  message: 'contrasena no valida',
+                  message:
+                    'La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula ',
                 },
               })}
             />
             {errors.password && (
-              <span className="text-red-700 text-xs">{errors.password.message}</span>
+              <span className="max-w-[230px] text-center text-red-700 text-xs">
+                {errors.password.message}
+              </span>
             )}
           </div>
           {/* Bithday */}
