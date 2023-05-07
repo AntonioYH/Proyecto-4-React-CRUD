@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import DeleteUser from './components/DeleteUser';
 import Header from './components/Header';
@@ -7,7 +7,7 @@ import UsersForm from './components/UsersForm';
 import UsersList from './components/UsersList';
 import { getUsers, postUser, deleteUser, updateUser } from './JS/services';
 
-const BASE_URL = 'https://users-crud.academlo.tech/';
+const BASE_URL = 'https://users-crud-node-b6rp.onrender.com/';
 
 function App() {
   const { reset } = useForm();

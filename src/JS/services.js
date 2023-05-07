@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const getUsers = async (URL) => {
   try {
-    const res = await axios.get(URL + 'users/');
+    const res = await axios.get(URL + 'users');
     const data = res.data;
     return data;
   } catch (error) {
